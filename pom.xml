@@ -11,8 +11,8 @@
     <groupId>com.example</groupId>
     <artifactId>demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>SpringMVC2</name>
-    <description>SpringMVC2</description>
+    <name>Resource Example</name>
+    <description>Resource Example</description>
     <properties>
         <java.version>11</java.version>
     </properties>
