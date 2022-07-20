@@ -24,12 +24,12 @@ public class AuthorizationFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        if (!authorized(servletRequest)) {
+        /*if (!authorized(servletRequest)) {
             log.error("not authorized");
             prevent(servletResponse);
             return;
         }
-
+*/
         log.info("authorized");
         filterChain.doFilter(servletRequest, servletResponse);
     }
