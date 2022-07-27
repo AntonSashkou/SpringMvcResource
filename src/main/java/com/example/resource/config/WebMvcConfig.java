@@ -2,13 +2,18 @@ package com.example.resource.config;
 
 import com.example.resource.interceptor.AuthorizationInterceptor;
 import com.example.resource.interceptor.LogInterceptor;
+import com.example.resource.resolver.RemoteResourceResolver;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.UrlResource;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import org.springframework.web.servlet.resource.EncodedResourceResolver;
+
+import java.net.MalformedURLException;
 
 @Slf4j
 @Configuration
@@ -30,10 +35,14 @@ public class WebMvcConfig implements WebMvcConfigurer {
         registry.addResourceHandler("/txt/**").addResourceLocations("classpath:/txt/");
         registry.addResourceHandler("/local/**").addResourceLocations("file:/home/antonsashkou/Desktop/");
 
-        /*registry
-                .addResourceHandler("/json/**")
-                .addResourceLocations("classpath:/json/")
-                .resourceChain(false)
-                .addResolver(new EncodedResourceResolver());*/
+        try {
+            registry
+                    .addResourceHandler("/remote/**")
+                    .addResourceLocations(new UrlResource("https://api.npoint.io/"))
+                    .resourceChain(false)
+                    .addResolver(new RemoteResourceResolver());
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
