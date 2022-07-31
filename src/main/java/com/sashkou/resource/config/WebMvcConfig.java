@@ -1,16 +1,14 @@
-package com.example.resource.config;
+package com.sashkou.resource.config;
 
-import com.example.resource.interceptor.AuthorizationInterceptor;
-import com.example.resource.interceptor.LogInterceptor;
-import com.example.resource.resolver.RemoteResourceResolver;
+import com.sashkou.resource.interceptor.AuthorizationInterceptor;
+import com.sashkou.resource.interceptor.LogInterceptor;
+import com.sashkou.resource.resolver.RemoteResourceResolver;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.net.MalformedURLException;

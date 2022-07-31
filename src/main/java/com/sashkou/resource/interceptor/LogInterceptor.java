@@ -1,4 +1,4 @@
-package com.example.resource.interceptor;
+package com.sashkou.resource.interceptor;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.annotation.Order;
@@ -10,9 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @Slf4j
-@Order(2)
+@Order(1)
 @Component
-public class AuthorizationInterceptor implements HandlerInterceptor {
+public class LogInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {

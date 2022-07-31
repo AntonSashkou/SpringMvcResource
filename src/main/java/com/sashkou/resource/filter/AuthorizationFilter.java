@@ -1,4 +1,4 @@
-package com.example.resource.filter;
+package com.sashkou.resource.filter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;

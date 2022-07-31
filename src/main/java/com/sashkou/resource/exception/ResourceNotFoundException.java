@@ -1,4 +1,4 @@
-package com.example.resource.exception;
+package com.sashkou.resource.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
 

@@ -1,6 +1,6 @@
-package com.example.resource.controller;
+package com.sashkou.resource.controller;
 
-import com.example.resource.service.ResourceService;
+import com.sashkou.resource.service.ResourceService;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

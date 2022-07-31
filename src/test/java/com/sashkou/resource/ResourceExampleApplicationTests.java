@@ -1,4 +1,4 @@
-package com.example.resource;
+package com.sashkou.resource;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

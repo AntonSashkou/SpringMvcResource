@@ -1,4 +1,4 @@
-package com.example.resource.resolver;
+package com.sashkou.resource.resolver;
 
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;

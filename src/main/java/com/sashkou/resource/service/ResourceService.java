@@ -1,4 +1,4 @@
-package com.example.resource.service;
+package com.sashkou.resource.service;
 
 public interface ResourceService {
 

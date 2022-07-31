@@ -1,4 +1,4 @@
-package com.example.resource.filter;
+package com.sashkou.resource.filter;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

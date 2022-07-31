@@ -1,6 +1,6 @@
-package com.example.resource.controller;
+package com.sashkou.resource.controller;
 
-import com.example.resource.exception.ResourceNotFoundException;
+import com.sashkou.resource.exception.ResourceNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
